@@ -74,7 +74,7 @@
              <th>Agama</th>
              <th>Alamat</th>
              <th>Bobot</th>
-             <th>Hapus</th>
+             
              <th>Update</th>
            </tr>
            <?php foreach($group as $post)
@@ -92,12 +92,9 @@
              <input type="hidden" name="Nama1" value="<?php echo $post->Nama;?>">
              <button type="submit" class="btn btn-sm btn-primary" ><i class="glyphicon glyphicon-edit"></i></button>
 
-           </td></form>
-           <form action="<?php echo base_url() ?>index.php/Co_karyawan/hapusKaryawan" method="post"><td>
-             <input type="hidden" name="Nama2" value="<?php echo $post->Nama;?>">
-             <button type="submit" class="btn btn-sm btn-danger" ><i class="glyphicon glyphicon-trash"></i></button>
+          
 
-           </td></form>
+  
              <form action="<?php echo base_url() ?>index.php/Co_karyawan/update" method="post"><td>
              <input type="hidden" name="nama" value="<?php echo $post->Nama;?>">
              <input type="hidden" name="ttl" value="<?php echo $post->TTL;?>">
